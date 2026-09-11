@@ -32,7 +32,7 @@ Emails ending in these domains are marked as verified ALU addresses:
 
 ## Project structure
 
-\```
+```
 alu-regex-data-extraction_eiriza-byte/
 ├── input/
 │   └── raw-text.txt      
@@ -41,7 +41,7 @@ alu-regex-data-extraction_eiriza-byte/
 ├── output/
 │   └── sample-output.json 
 └── README.md
-\```
+```
 
 ## How to run it
 
